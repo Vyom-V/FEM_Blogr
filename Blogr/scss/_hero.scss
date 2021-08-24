@@ -1,0 +1,21 @@
+.hero{
+
+    &__text{
+        text-align: center;
+        color: white;
+        padding: 15vh 10vw 7vh 10vw;
+        line-height: normal;
+    
+        h1{
+            font-size: 2.05rem;
+
+        }
+    }
+
+
+    &__btn{
+        text-align: center;
+        
+    }
+    
+}

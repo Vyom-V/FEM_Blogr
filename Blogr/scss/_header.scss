@@ -1,0 +1,107 @@
+.header{
+        position: relative;
+        border-radius: 0 0 0 6.25rem;
+        height: 37.5rem;
+        margin-bottom: 4rem;
+        background-image: linear-gradient(190deg,$Verylightred,$Lightred);
+        z-index: 1;
+        overflow-x: hidden;
+
+        &::before{
+            position: absolute;
+            content: '';
+            z-index: -1;
+            height: inherit;
+            width: 100vw;
+            border-radius: 0 0 0 6.25rem;
+            background-image: url(images/bg-pattern-intro.svg);
+            background-position: 39% 35%;
+            background-size: 391%;
+            background-repeat: no-repeat;
+    
+    }
+
+    &__logo{
+        padding: 0 2rem 0 1rem;
+        img{
+            height: 2rem;
+        }
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 1.38rem 0 1.38rem;
+      
+    }
+
+    &__left{
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+    }
+
+    &__burger{
+        span{
+            width: 1.875rem;
+            transition: all 200ms ease;
+            display: block;
+            height: 0.1rem;
+            background-color:$White;
+            margin-bottom: 0.456rem;
+            
+        }
+    }
+
+    &__menu{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 0.75rem;
+        .menu{
+            display: inline-block;
+            position: relative;
+
+        }
+        .submenu{
+            position: absolute;
+            display: none;
+            background-color: $White;
+            border-radius: 3px;
+            padding: 1rem 0.5rem;
+            
+            a{
+                color: $Verydarkblackblue;
+                
+            }
+        }
+
+        a{
+            p{
+                display: inline-block;
+                transform: rotate(270deg);
+                padding: 0.2rem;
+                font-size: 0.8rem;
+            }
+            
+
+        }
+        .menu-btn{
+
+            justify-self: flex-end;
+        }
+        
+    }
+
+    &__right{
+
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 0.75rem;
+        a{
+            color: $White;
+            &:hover{
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}

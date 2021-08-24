@@ -1,0 +1,14 @@
+.animate{
+    span:first-child{
+        transform-origin: 3px 1px;
+        transform: rotate(45deg);
+    }
+    span:nth-child(2){
+        transform: translateX(30px);
+        opacity:0;
+    }
+    span:last-child{
+        transform-origin: 3px 1px;
+        transform: rotate(-45deg);
+    }
+}

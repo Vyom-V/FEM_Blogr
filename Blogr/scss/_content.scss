@@ -1,0 +1,49 @@
+.content{
+    
+    padding-top: 50px;
+    &__head{
+        padding-bottom: 50px;
+         font-size: 18px;
+        text-align: center;
+    }
+    
+    .disp{
+        &__bg{
+            height: 350px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &__first{
+                background-image: url(images/illustration-editor-mobile.svg);
+            }
+            &__second{
+                background-image: url(images/illustration-laptop-mobile.svg);
+            }
+    }
+    &__info{
+            &__mb{
+                margin-bottom: 16rem;
+            }
+            &__mt{
+                margin-top: 0.5rem;
+                margin-bottom: 8rem;
+            }
+        text-align: center;
+        .info{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 0 35px;
+            h2{
+                color: $veryDarkBlue;
+                line-height: normal;
+                font-size: 30px;
+                padding: 20px;
+            }
+            p{
+                color: $Verydarkgrayishblue;
+                font-size: 16px;
+            }
+        }
+     }
+  }
+}

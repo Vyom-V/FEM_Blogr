@@ -1,0 +1,59 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: inherit;
+}
+html{
+font-size: 100%;
+box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+
+}
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0.5rem;
+    font-weight: 400;
+    border-radius: 60px;
+    border: 2px solid white;
+    width: 7rem;
+    margin: 0.675rem;
+}
+.w{
+    color: $lightRed;
+    background-color: $White;
+    border: 0px solid white;
+    padding: 0.625rem;
+
+    &:hover{
+    color: $White;
+    background-color: rgba(255, 255, 255, 0.267);
+    }
+}
+.t{
+    background-color: rgba(255, 255, 255, 0);
+    color: $White;
+    
+    &:hover{
+        color: $lightRed;
+        background-color: $White;
+    }
+}
+.hide-for-d{
+    @media (min-width:38rem) {
+        display: none;
+    }
+}
+.hide-for-m{
+    @media (max-width:39rem) {
+display: none;
+    }
+}
+.active{
+        color: $Verydarkgrayishblue;
+}

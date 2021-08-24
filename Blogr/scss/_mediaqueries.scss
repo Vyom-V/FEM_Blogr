@@ -1,0 +1,269 @@
+@media (min-width:800px) { //desktop content
+    .header__menu{
+        a{
+            color: $White;
+        }
+    }
+    .dropdown{
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+    .header{
+        margin-bottom: 2rem;
+        height: 28rem;
+        background-image: linear-gradient(to right,$Verylightred,$Lightred);
+        border-radius: 0 0 0 4.687rem;
+
+
+        &::before{
+            border-radius: 0 0 0 4.687rem;
+            background-position: -10rem -45rem;
+            background-size: 107rem;
+        }
+
+        nav{
+            padding: 1rem 5rem;
+        }
+    }
+
+    .hero{
+
+        &__text{
+        padding: 10vh 10vw 5vh 10vw; 
+        h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        }
+    }
+    .menu{
+        &:hover{
+            .dropdown{
+                font-weight: 500;
+                text-decoration: underline;
+                p{
+                    transform: rotate(-270deg);
+                 }
+             }
+             .submenu{
+                display: block;
+            }
+    }
+}
+.submenu{
+            top: 22px;
+            color: $White;
+        a{  
+            text-align: left;
+            padding: 0.4rem;
+            display: block;
+            &:hover{
+                color: $Verydarkblackblue;
+                font-weight: 700;
+                }
+        }
+    }
+    //content queries....
+.content{
+    &__head{
+    padding-top: 100px;
+    }
+    .disp{
+        display: flex;
+        position: relative;
+        &__revs{
+            flex-direction: row-reverse;
+        }
+        &__bg{
+            position: absolute;
+            width: calc(100vw - 530px);
+            &__first{
+                height: 670px;
+                right: 0;
+                top:-26%;
+                background-size: 110%;
+                background-position: -225% center;
+                background-image: url(images/illustration-editor-desktop.svg);
+            }
+            &__second{
+                height: 600px;
+                left: 0;
+                top:-10%;
+                background-size: 110%;
+                background-position: 310% center;
+                background-image: url(images/illustration-laptop-desktop.svg);
+            }
+    }
+    &__info{
+        background-color: rgba(255, 255, 255, 0);
+        width: 530px;
+        margin-right: 1rem;
+        text-align: left;
+        padding-left: 0;
+        &__mb{
+            margin-left: 3rem;
+        }
+        &__mt{
+            width: 530px;
+            margin-top: 3.5rem;
+            margin-right: 6.25rem;
+            margin-bottom: 15rem;
+        }
+        .info{
+        padding-right: 0;
+        &:not(:last-child){
+            margin-bottom: 3.75rem;
+        }
+        h2{
+            font-size: 1.5rem;
+            padding: 0;
+            padding-bottom: 1rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+    }
+    }
+}
+//middle content....
+    .midcontent{
+        height: 300px;
+        border-radius: 0 4.68rem;
+        flex-direction: row-reverse;
+        background-image: linear-gradient(to right,$Verydarkgrayblue,$Verydarkdesaturatedblue);
+        
+        &::before{
+            border-radius: 0 4.68rem;
+            background-image: url(images/bg-pattern-circles.svg);
+            background-position: -9rem -20rem;
+            background-size: 44rem;    
+        }
+
+        &::after{
+            top: -6rem;
+            bottom: -8rem;
+            border-radius: 0 4.68rem;
+            background-image: url(images/illustration-phones.svg);
+            background-position: 4rem center;
+            background-size: 26rem;
+        }
+
+        &__text{
+            width: 33.125rem;
+            box-sizing: border-box;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                align-self: flex-start;
+                font-size: 1.77rem;
+            }
+            p{
+            margin-right: 7.5rem;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer{
+        height: 16.25rem;    
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+        &__logo{
+            padding: 0;
+            text-align: center;
+            width: 20rem;
+    
+            img{
+                height: auto;
+                width: 4.5rem;
+            }   
+        }
+    
+        &__col{
+            width: 12.5rem;
+            font-size: 10px;
+        }
+    
+        &__heading{
+            margin: 0;
+            margin-bottom: 1.3rem ;        
+            font-size: 10px;
+            font-weight: 400;
+        }
+        
+        &__links{
+            margin: 0;
+        margin-bottom: 1rem ;
+        a{
+            padding: 0.25rem 0;
+            
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+        }
+    
+    }
+
+
+}
+@media (max-width:700px) { //mobile content
+    
+    .header__menu{
+        position: absolute;
+        top: 16vh;
+        height: auto;
+        width: 90vw;
+        background-color: $White;
+        border-radius: 5px;
+        padding: 1rem;
+
+        .menu,.menu-btn{
+            display: block;
+            text-align: center;
+            margin: 0.2rem;
+            a{  
+                padding: 0.4rem;
+                display: block;
+                text-align: center;
+                p{
+                    padding: 0.4rem;
+                    font-size: 1rem;
+                }
+
+            }
+            .submenu{
+                background-color: rgba(231, 228, 228, 0.678);
+                border-radius: 5px;
+                position:relative;
+                margin: 0.2rem;                
+                text-align: center;
+                a{
+                    color: $Verydarkgrayishblue;
+                padding: 0.5rem;
+                }
+            }
+            .m-btn{
+                background-image: linear-gradient(to right,$Verylightred,$lightRed);
+                color: $White;
+                padding-top: 0.65rem;
+                padding-bottom: 0.65rem;
+            }
+        }
+    }
+}
